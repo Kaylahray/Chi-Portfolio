@@ -1,33 +1,250 @@
-import NavBar from "./Components/NavBar";
-import "./App.css";
-import About from "./Components/About";
-const App = () => {
+import { useEffect } from "react";
+// import "./App.css";
+import "./assets/vendor/icofont/icofont.min.css";
+import { appendScript } from "./utils/appendScript";
+
+function App() {
+  useEffect(() => {
+    appendScript("./assets/vendor/jquery/jquery.min.js");
+    appendScript("./assets/vendor/isotope-layout/isotope.pkgd.min.js");
+  }, []);
+
   return (
     <>
       {/* <!-- ======= Header ======= --> */}
-      <NavBar />
 
+      <header
+        id="header"
+        className="fixed-top  d-flex justify-content-center align-items-center header-transparent"
+      >
+        <nav className="nav-menu d-none d-lg-block">
+          <ul>
+            <li className="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#resume">Resume</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        {/* <!-- .nav-menu --> */}
+      </header>
       {/* <!-- End Header --> */}
 
       {/* <!-- ======= Hero Section ======= --> */}
+      <section id="hero">
+        <div className="hero-container">
+          <h1>Chioma christopher</h1>
+          <h2>I&apos;m a Frontend Web Developer </h2>
+
+          <a href="#about" className="btn-scroll scrollto" title="Scroll Down">
+            <i className="bx bx-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+      {/* <!-- End Hero --> */}
+
       <main id="main">
-        <section id="hero">
-          <div className="hero-container">
-            <About />
+        {/* <!-- ======= About Me Section ======= --> */}
+        <section id="about" className="about">
+          <div className="container">
+            <div className="section-title">
+              <span>About Me</span>
+              <h2>About Me</h2>
+              <p></p>
+            </div>
+
+            <div className="row">
+              <div className="col-lg-10 d-flex flex-column align-items-stretch justify-content-center">
+                <div className="content pl-lg-4 d-flex flex-column justify-content-center">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <ul>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Name:</strong> Chioma Christopher
+                        </li>
+
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Phone:</strong> +234 7084513847{" "}
+                        </li>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>City:</strong> City : Kaduna, Nigeria
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-lg-6">
+                      <ul>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Age:</strong> 22
+                        </li>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Degree:</strong> B Tech
+                        </li>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Email:</strong> chiomachristopher91@gmail.com
+                        </li>
+                        <li>
+                          <i className="icofont-rounded-right"></i>{" "}
+                          <strong>Freelance:</strong> Available
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="row mt-n4">
+                    <div className="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                      <div className="count-box">
+                        <i
+                          className="icofont-simple-smile"
+                          style={{ color: "#20b38e" }}
+                        ></i>
+                        <span data-toggle="counter-up">2</span>
+                        <p>
+                          <strong>Happy Clients</strong>{" "}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                      <div className="count-box">
+                        <i
+                          className="icofont-clock-time"
+                          style={{ color: "#2cbdee" }}
+                        ></i>
+                        <span data-toggle="counter-up">10 </span>
+                        <p>
+                          <strong>Months of experience</strong>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                      <div className="count-box">
+                        <i
+                          className="icofont-award"
+                          style={{ color: "#ffb459" }}
+                        ></i>
+                        <span data-toggle="counter-up">3</span>
+                        <p>
+                          <strong>Awards</strong>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End .content--> */}
+
+                <div className="skills-content pl-lg-4">
+                  <div className="progress">
+                    <span className="skill">
+                      HTML <i className="val">100%</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div className="progress">
+                    <span className="skill">
+                      CSS <i className="val">60%</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div className="progress">
+                    <span className="skill">
+                      Bootstrap<i className="val">50%</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div className="progress">
+                    <span className="skill">
+                      JavaScript <i className="val">65%</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="45"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div className="progress">
+                    <span className="skill">
+                      React js <i className="val">45%</i>
+                    </span>
+                    <div className="progress-bar-wrap">
+                      <div
+                        className="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="15"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        {/* <!-- End Hero --> */}
-
-        {/* <!-- ======= About Me Section ======= --> */}
-
         {/* <!-- End About Me Section --> */}
         {/* <!-- ======= My Portfolio Section ======= --> */}
         <section id="portfolio" className="portfolio">
           <div className="container">
             <div className="section-title">
               <span>My Projects</span>
-              <h2>My Projects</h2>
+              <h2>My Projects/Tasks</h2>
             </div>
+
+            <ul id="portfolio-flters" className="d-flex justify-content-center">
+              <li data-filter="*" className="filter-active">
+                All
+              </li>
+            </ul>
 
             <div className="row portfolio-container">
               <div
@@ -462,9 +679,9 @@ const App = () => {
           </div>
           <div className="credits">
             {/* <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ --> */}
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/ --> */}
             <a href="https://bootstrapmade.com/"></a>
           </div>
         </div>
@@ -475,6 +692,6 @@ const App = () => {
       </a>
     </>
   );
-};
+}
 
 export default App;
