@@ -12,7 +12,7 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <a href="mailto:myemail@email.com">
+          <a href="mailto:chiomachristopher91@email.com">
             <AiOutlineMail />
           </a>
         </li>
