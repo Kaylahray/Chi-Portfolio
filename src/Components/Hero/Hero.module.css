@@ -27,6 +27,7 @@
 
 .title {
   font-size: 72px;
+  color: #000;
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
@@ -117,9 +118,31 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    margin-top: 190px;
+  }
+  .content {
+    width: 80%;
+    margin-top: 100px;
+  }
+  .title {
+    font-size: 22px;
+    -webkit-text-fill-color: black;
+    margin: 8px 0;
+  }
+  .ImgDiv {
+    /* width: 100%; */
   }
 
-  .content {
+  .description {
+    font-size: 18px;
+    font-family: var(--font-roboto);
+    margin-bottom: 52px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top: -250px;
   }
 }
