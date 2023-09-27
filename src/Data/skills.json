@@ -8,6 +8,10 @@
     "imageSrc": "about/css.jpg"
   },
   {
+    "title": "JavaScript",
+    "imageSrc": "about/java.png"
+  },
+  {
     "title": "React",
     "imageSrc": "about/reacts.png"
   },
