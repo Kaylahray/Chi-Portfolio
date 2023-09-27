@@ -11,7 +11,10 @@ export const Hero = () => {
             I&apos;m a frontend web developer with 6 months of experience using
             ReactJs and VueJs. Reach out for more Enquires!
           </p>
-          <a href="mailto:chiomachristopher91@email.com" className={styles.contactBtn}>
+          <a
+            href="mailto:chiomachristopher91@email.com"
+            className={styles.contactBtn}
+          >
             Contact Me
           </a>
         </div>
@@ -23,8 +26,8 @@ export const Hero = () => {
           />
         </div>
       </div>
-      {/* <div className={styles.topBlur} /> */}
-      {/* <div className={styles.bottomBlur} /> */}
+      <div className={styles.topBlur} />
+      <div className={styles.bottomBlur} />
     </section>
   );
 };

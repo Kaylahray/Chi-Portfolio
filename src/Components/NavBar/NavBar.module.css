@@ -33,6 +33,12 @@
   color: rgb(248, 245, 245);
   text-decoration: none;
 }
+.menuItems a:hover,
+.menuItems a:active {
+  font-size: 28px;
+  color: purple;
+  text-decoration: none;
+}
 @media screen and (min-width: 840px) {
   .menuBtn {
     display: none;
