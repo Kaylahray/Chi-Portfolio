@@ -140,4 +140,15 @@
     width: 100%;
     gap: 9px;
   }
+
+  .itemLi {
+    margin: 16px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills {
+    height: 300px;
+    margin: 20px 0;
+  }
 }

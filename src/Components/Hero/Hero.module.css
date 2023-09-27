@@ -119,6 +119,7 @@
   .container {
     flex-direction: column-reverse;
     margin-top: 190px;
+    height: 100%;
   }
   .content {
     width: 80%;
@@ -144,5 +145,13 @@
     justify-content: center;
     align-items: center;
     margin-top: -250px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 100%;
+    /* margin-top: -330px; */
   }
 }
