@@ -1,0 +1,23 @@
+[
+  {
+    "role": "Frontend Intern",
+    "organisation": "Greysoft Technologies",
+    "startDate": "May, 2023",
+    "endDate": "Present",
+    "experiences": ["Trained students interested in Frontend Development"]
+  },
+  {
+    "role": "Frontend Intern",
+    "organisation": "Stutern",
+    "startDate": "Feb, 2023",
+    "endDate": "May, 2023",
+    "experiences": ["Designed and Developed a loan application"]
+  },
+  {
+    "role": "Frontend Intern",
+    "organisation": "Zuri",
+    "startDate": "May, 2022",
+    "endDate": "August, 2022",
+    "experiences": ["Intensive Training on Frontend applications"]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "about/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "about/css.jpg"
+  },
+  {
+    "title": "React",
+    "imageSrc": "about/reacts.png"
+  },
+  {
+    "title": "'vue'",
+    "imageSrc": "about/vue.png"
+  }
+]
