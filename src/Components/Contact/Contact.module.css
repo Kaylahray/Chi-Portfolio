@@ -3,7 +3,7 @@
 .container {
   color: var(--color-text);
   margin-top: 120px;
-  background-color: var(--color-secondary);
+  background-color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -50,6 +50,7 @@
   .container {
     flex-direction: column;
     gap: 23px;
+    text-align: center;
   }
 
   .text {

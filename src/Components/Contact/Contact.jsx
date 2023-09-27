@@ -1,4 +1,6 @@
 import styles from "./Contact.module.css";
+import { BsLinkedin } from "react-icons/bs";
+import { AiOutlineMail, AiFillGithub } from "react-icons/ai";
 // import { getImageUrl } from "../../utils";
 
 export const Contact = () => {
@@ -10,15 +12,19 @@ export const Contact = () => {
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <a href="mailto:myemail@email.com">myemail@email.com</a>
-        </li>
-        <li className={styles.link}>
-          <a href="https://www.linkedin.com/m/in/chioma-christopher-6a539723a">
-            linkedin.com/myname
+          <a href="mailto:myemail@email.com">
+            <AiOutlineMail />
           </a>
         </li>
         <li className={styles.link}>
-          <a href="https://github.com/Kaylahray">github.com/myname</a>
+          <a href="https://www.linkedin.com/m/in/chioma-christopher-6a539723a">
+            <BsLinkedin />
+          </a>
+        </li>
+        <li className={styles.link}>
+          <a href="https://github.com/Kaylahray">
+            <AiFillGithub />
+          </a>
         </li>
       </ul>
     </footer>

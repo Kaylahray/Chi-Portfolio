@@ -57,6 +57,7 @@
 }
 
 .skillImageContainer img {
+  mix-blend-mode: darken;
   object-fit: cover;
   width: 75px;
 }
@@ -129,7 +130,7 @@
   }
 
   .skills {
-    height: 150px;
+    height: 200px;
     margin: 20px 0;
     width: 100%;
     flex-direction: row;
@@ -146,7 +147,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .skills {
     height: 300px;
     margin: 20px 0;
