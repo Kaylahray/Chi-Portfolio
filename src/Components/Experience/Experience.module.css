@@ -58,8 +58,9 @@
 
 .skillImageContainer img {
   mix-blend-mode: darken;
+  height: 80px;
   object-fit: cover;
-  width: 75px;
+  width: 80px;
 }
 
 .skill p {
